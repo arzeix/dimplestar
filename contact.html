@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dimple Star Transport</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚌</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <div class="header-content">
+               <div class="logo">
+                    <i class="fas fa-van-shuttle"></i> Dimple Star Transport
+                </div>
+                
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terminal.html">Terminals</a></li>
+                        <li><a href="routeschedule.html">Routes / Schedules</a></li>
+                        <li class="current"><a href="contact.html">Contact</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <main class="contact-content">
+        <div class="container">
+            <div class="page-title">
+           
+            
+            <div class="contact-container">
+              
+                <div class="contact-info-card">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> 0929 209 0712</p>
+                        <p><i class="fas fa-envelope"></i> info@dimplestartransport.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Block 1 lot 10, Southpoint Subd.</p>
+                        <p style="margin-left: 32px;">Brgy Banay-Banay, Cabuyao, Laguna</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 6:00 AM - 10:00 PM</p>
+                        <p><i class="fas fa-clock"></i> Sunday: 7:00 AM - 9:00 PM</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+               
+                <div class="contact-form-card">
+                    <h2>Send Us a Message</h2>
+                    <form class="validate" action="messageexec.php" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="required label">Name:</label>
+                            <input id="name" class="contactform" type="text" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required label">Email:</label>
+                            <input id="email" class="contactform" placeholder="Example: aaron@gwaps.com" type="email" name="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="required label">Subject:</label>
+                            <input id="subject" class="contactform" type="text" name="subject" required />
+                        </div>
+                        <div class="form-group">
+                            <label id="message-label" for="message" class="required label">Message:</label>
+                            <textarea id="message" class="contactform" name="message" cols="28" rows="4" required></textarea>
+                        </div>
+                        <input class="submit" id="submit-button" type="submit" name="Submit" value="Submit Message" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; Dimple Star Transport. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

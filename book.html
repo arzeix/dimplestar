@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Dimple Star Transport</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚌</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <div class="container">
+            <div class="header-content">
+               <div class="logo">
+                    <i class="fas fa-van-shuttle"></i> Dimple Star Transport
+                </div>
+                
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terminal.html">Terminals</a></li>
+                        <li><a href="routeschedule.html">Routes / Schedules</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="current"><a href="book.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="book-content">
+        <div class="container">
+            <div class="page-title">
+          
+            <div class="booking-container">
+                <div class="booking-form-card">
+                    <h2>Reservation Details</h2>
+                    <form class="booking-form" action="" method="POST">
+                        <table>
+                            <tr>
+                                <td>Origin:</td>
+                                <td>
+                                    <select name="Origin" required>
+                                        <option value="0">Select</option>
+                                        <option value="San Lazaro">San Lazaro</option>
+                                        <option value="Espana">Espana</option>
+                                        <option value="Alabang">Alabang</option>
+                                        <option value="Cabuyao">Cabuyao</option>
+                                        <option value="Naujan">Naujan</option>
+                                        <option value="Victoria">Victoria</option>
+                                        <option value="Pinamalayan">Pinamalayan</option>
+                                        <option value="Gloria">Gloria</option>
+                                        <option value="Bongabong">Bongabong</option>
+                                        <option value="Roxas">Roxas</option>
+                                        <option value="Mansalay">Mansalay</option>
+                                        <option value="Bulalacao">Bulalacao</option>
+                                        <option value="Magsaysay">Magsaysay</option>
+                                        <option value="San Jose">San Jose</option>
+                                        <option value="Pola">Pola</option>
+                                        <option value="Soccoro">Soccoro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Destination:</td>
+                                <td>
+                                    <select name="Destination" required>
+                                        <option value="0">Select</option>
+                                        <option value="San Lazaro">San Lazaro</option>
+                                        <option value="Espana">Espana</option>
+                                        <option value="Alabang">Alabang</option>
+                                        <option value="Cabuyao">Cabuyao</option>
+                                        <option value="Naujan">Naujan</option>
+                                        <option value="Victoria">Victoria</option>
+                                        <option value="Pinamalayan">Pinamalayan</option>
+                                        <option value="Gloria">Gloria</option>
+                                        <option value="Bongabong">Bongabong</option>
+                                        <option value="Roxas">Roxas</option>
+                                        <option value="Mansalay">Mansalay</option>
+                                        <option value="Bulalacao">Bulalacao</option>
+                                        <option value="Magsaysay">Magsaysay</option>
+                                        <option value="San Jose">San Jose</option>
+                                        <option value="Pola">Pola</option>
+                                        <option value="Soccoro">Soccoro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>No. Of Passengers:</td>
+                                <td>
+                                    <input type="number" name="no_of_pass" min="1" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Departure:</td>
+                                <td>
+                                    <input id="datepick1" size="10" name="Departure" required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Return:</td>
+                                <td>
+                                    <input id="datepick2" size="10" name="Return" disabled />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bus Type:</td>
+                                <td>
+                                    <select name="bustype" required>
+                                        <option value="0">Select</option>
+                                        <option value="Air Conditioned">Air Conditioned</option>
+                                        <option value="Ordinary">Ordinary</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding-top: 15px; text-align: center;">
+                                    <input type="submit" name="submit" id="submit" value="Book Now" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; Dimple Star Transport. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/datepickr.js"></script>
+    <script type="text/javascript">
+        new datepickr('datepick1', {
+            'dateFormat': '20y-m-d'
+        });
+        
+        new datepickr('datepick2', {
+            'dateFormat': '20y-m-d'
+        });
+    </script>
+</body>
+</html>

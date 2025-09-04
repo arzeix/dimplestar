@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes & Schedules - Dimple Star Transport</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚌</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-van-shuttle"></i> Dimple Star Transport
+                </div>
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="terminal.html">Terminals</a></li>
+                        <li class="current"><a href="routeschedule.html">Routes / Schedules</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-text">
+               
+                
+                <h3>
+                    <?php
+                        date_default_timezone_set("Asia/Manila");
+                        echo "Today is " . date("l, F d, Y");
+                    ?>
+                </h3>
+            </div>
+
+            <table class="routes-table">
+                <thead>
+                    <tr>
+                        <th>Origin</th>
+                        <th>Schedule</th>
+                        <th>Destination</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Origin">Ali Mall Cubao Terminal</td>
+                        <td data-label="Schedule">9:00 AM / 10:00 AM / 1:00 PM / 4:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Origin">Alabang Terminal</td>
+                        <td data-label="Schedule">6:00 AM / 7:00 AM / 2:00 PM / 6:00 PM / 10:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Origin">Cabuyao Terminal</td>
+                        <td data-label="Schedule">8:00 AM / 9:00 AM / 4:00 PM / 8:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Origin">Espana Terminal</td>
+                        <td data-label="Schedule">4:30 AM / 5:30 AM / 12:00 PM / 4:00 PM / 8:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Origin">San Lazaro Terminal</td>
+                        <td data-label="Schedule">3:00 AM / 4:30 AM / 11:00 AM / 3:00 PM / 7:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Origin">Pasay Terminal</td>
+                        <td data-label="Schedule">5:00 AM / 6:00 AM / 1:00 PM / 3:00 PM</td>
+                        <td data-label="Destination">San Jose</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy;  Dimple Star Transport. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
